@@ -8,7 +8,7 @@ interface IExperienceCardProps {
 const ExperienceCard = ({ experience }: IExperienceCardProps) => {
   return (
     <div className="experience-card space-y-4">
-      <div className="flex gap-4">
+      <div className="flex gap-4 max-h-full">
         <Image
           src={experience.institutionImagePath}
           alt={experience.institution}

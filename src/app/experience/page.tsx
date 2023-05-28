@@ -27,12 +27,13 @@ const Experience = () => {
   return (
     <PageContent title="Experience">
       <div className="flex h-full">
-        <ul className="list-none text-3xl mt-8 space-y-6 text-primary-green w-5/12">
+        <ul className="list-none text-3xl space-y-6 text-primary-green w-5/12 mt-12">
           {['Professional', 'Educational'].map(experienceOption => {
             const isActiveOption = activeExperienceOption === experienceOption
 
             return (
               <li
+                key={experienceOption}
                 className={`before:content-['>'] before:mr-2 cursor-pointer ${
                   isActiveOption ? 'text-white-green' : ''
                 } hover:text-5xl transition-all w-fit`}

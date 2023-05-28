@@ -11,7 +11,7 @@ const databaseSkills: Skill[] = require('./databaseSkills.json')
 const About = () => {
   return (
     <PageContent title="About">
-      <div className="flex gap-36">
+      <div className="flex gap-36 max-h-full">
         <div className="who-container w-5/12 self-center">
           <h1 className="text-primary-green font-semibold text-3xl mb-6">
             Who's this guy?

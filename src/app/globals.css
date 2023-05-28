@@ -39,3 +39,7 @@ main {
         border-color: theme('colors.primary-green');
     }
 }
+
+.prose *{
+  color: inherit!important;
+}
