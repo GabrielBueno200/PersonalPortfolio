@@ -16,11 +16,17 @@ const About = () => {
           <h1 className="text-primary-green font-semibold text-3xl mb-6">
             Who's this guy?
           </h1>
-          <span className="text-white text-2xl">
-            I'm a brazillian developer with experience in backend and frontend.
-            However, I'm currently working working as .NET backend developer to
-            the FIAP university. Programming is my passion, so I love to learn
-            all kind of language, framework or anything related to technology.
+          <span className="text-white text-xl">
+            Hi, I'm Gabriel, a 22-year-old software developer. I have a degree
+            in Computer Science and I am also an IT technician. I possess skills
+            in both backend and frontend software development. My preferred
+            stack involves working with C#/.Net Core on the server side and
+            React/Typescript on the client side. With approximately three years
+            of professional experience as a developer, I'm currently employed as
+            a Junior Fullstack Software Developer at Partner Group. I am
+            constantly striving to enhance my programming skills and improve my
+            knowledge in this field. I prioritize seeking experiences that
+            contribute to both my personal and professional growth
           </span>
         </div>
 

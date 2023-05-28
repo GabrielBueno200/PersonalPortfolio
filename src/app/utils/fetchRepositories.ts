@@ -1,4 +1,6 @@
 const repositoriesToFilter = [
+  "ToDoTaskApp",
+  "StudentClassManager",
   "Spotify-Tailwind-Clone",
   "StudentClassManager",
   "ToDoTaskApp",
@@ -15,10 +17,10 @@ const repositoriesToFilter = [
   "Arduino-Snake-Game",
   "MovieTheater-with-8051"
 ]
-
+// 86400
 const getRepositoriesAsync = async () => {
   const revalidate: RequestInit = {
-    next: { revalidate: 86400 }
+    next: { revalidate: 5 }
   }
 
   const response = await fetch(
