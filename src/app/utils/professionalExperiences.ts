@@ -1,4 +1,6 @@
-[
+import { Experience } from "../types/experience";
+
+export const professionalExperiences: Experience[] = [
   {
     "institution": "FIAP",
     "institutionImagePath": "/assets/institutions/FIAP.jpg",

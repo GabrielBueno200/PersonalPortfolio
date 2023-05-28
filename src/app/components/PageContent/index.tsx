@@ -9,7 +9,7 @@ interface IPageContentProps {
 
 const PageContent = ({ title, children }: IPageContentProps) => (
   <main className="bg-secondary-green flex items-center justify-center">
-    <div className="bg-black w-11/12 h-80vh p-8 overflow-hidden">
+    <div className="bg-black w-11/12 h-[80vh] p-8 overflow-hidden">
       <span className="w-fit inline-block mb-4">
         <h1 className="text-primary-green text-5xl font-extrabold mb-3 w-fit inline-block typewriter">
           {title}

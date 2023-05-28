@@ -4,10 +4,9 @@ import { useState } from 'react'
 import PageContent from '../components/PageContent'
 
 import ExperienceCard from '../components/ExperienceCard'
-import { Experience } from '../types/experience'
 
-import educationalExperiences from './educationalExperiences.json'
-import professionalExperiences from './professionalExperiences.json'
+import { educationalExperiences } from '../utils/educationExperiences'
+import { professionalExperiences } from '../utils/professionalExperiences'
 
 type ExperienceOptions = 'Professional' | 'Educational'
 
@@ -19,7 +18,7 @@ const Experience = () => {
     experienceOption: ExperienceOptions
   ) => setActiveExperienceOption(experienceOption)
 
-  const experiences: Experience[] =
+  const experiences =
     activeExperienceOption === 'Professional'
       ? professionalExperiences
       : educationalExperiences

@@ -1,4 +1,6 @@
-[
+import { Experience } from "../types/experience";
+
+export const educationalExperiences: Experience[] = [
   {
     "institution": "University Center of FEI",
     "institutionImagePath": "/assets/institutions/FEI.jpg",

@@ -1,48 +1,9 @@
 import PageContent from '../components/PageContent'
 import RepositoryCard from '../components/RepositoryCard'
-import repositoriesSettings from './repositoriesSettings.json'
-
-const getRepositoriesAsync = async () => {
-  const revalidate = 86400
-
-  const data = await fetch(
-    'https://api.github.com/users/GabrielBueno200/repos',
-    {
-      next: { revalidate }
-    }
-  )
-
-  let repositories = await Promise.all<Repository[]>(
-    (
-      await data.json()
-    ).map(async (repository: any) => {
-      const { default_branch, full_name } = repository
-      const readmeData = await fetch(
-        `https://raw.githubusercontent.com/${full_name}/${default_branch}/README.md`,
-        {
-          next: { revalidate }
-        }
-      )
-
-      return {
-        ...repository,
-        defaultBranch: repository['default_branch'],
-        fullName: repository['full_name'],
-        url: repository['html_url'],
-        readmeMarkdown: await readmeData.text()
-      }
-    })
-  )
-
-  repositories = repositories.filter(repository =>
-    repositoriesSettings['repositoriesToShow'].includes(repository.name)
-  )
-
-  return repositories
-}
+import { getFilteredRepositoriesAsync } from '../utils/fetchRepositories'
 
 const Portfolio = async () => {
-  const repositories = await getRepositoriesAsync()
+  const repositories = await getFilteredRepositoriesAsync()
 
   return (
     <PageContent title="Portfolio">
