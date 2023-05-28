@@ -1,8 +1,6 @@
 const repositoriesToFilter = [
-  "ToDoTaskApp",
   "StudentClassManager",
   "Spotify-Tailwind-Clone",
-  "StudentClassManager",
   "ToDoTaskApp",
   "cython-compiler",
   "GeekShopping-Microservices",
@@ -12,19 +10,18 @@ const repositoriesToFilter = [
   "MultiThreadedPrimesSolver",
   "SoftwareTestingProject",
   "Wallet-Controller",
-  "round-robbin-simulator",
+  "round-robin-simulator",
   "ChatProtocol",
   "Arduino-Snake-Game",
   "MovieTheater-with-8051"
 ]
-// 86400
 const getRepositoriesAsync = async () => {
   const revalidate: RequestInit = {
-    next: { revalidate: 5 }
+    next: { revalidate: 86400 }
   }
 
   const response = await fetch(
-    'https://api.github.com/users/GabrielBueno200/repos',
+    'https://api.github.com/users/GabrielBueno200/repos?per_page=100',
     revalidate
   )
 

@@ -20,7 +20,7 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
         <div className=" text-white flex justify-between text-xl items-center">
           <h1>{repository.name}</h1>
           <IoMdOpen
-            className="cursor-pointer"
+            className="cursor-pointer hover:fill-zinc-500 transition-all"
             onClick={() => handleSetShowRepositoryModal(true)}
           />
         </div>
