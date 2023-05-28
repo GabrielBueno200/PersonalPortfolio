@@ -1,0 +1,10 @@
+[
+  {
+    "name": "postgre",
+    "imagePath": "/assets/technologies/postgre.svg"
+  },
+  {
+    "name": "redis",
+    "imagePath": "/assets/technologies/redis.svg"
+  }
+]

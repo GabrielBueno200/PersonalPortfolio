@@ -1,0 +1,22 @@
+[
+  {
+    "name": "dotnet",
+    "imagePath": "/assets/technologies/dotnet.svg"
+  },
+  {
+    "name": "csharp",
+    "imagePath": "/assets/technologies/csharp.svg"
+  },
+  {
+    "name": "rabbitmq",
+    "imagePath": "/assets/technologies/rabbitmq.svg"
+  },
+  {
+    "name": "docker",
+    "imagePath": "/assets/technologies/docker.svg"
+  },
+  {
+    "name": "python",
+    "imagePath": "/assets/technologies/python.svg"
+  }
+]
