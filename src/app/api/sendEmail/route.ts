@@ -1,33 +1,47 @@
-import nodemailer from 'nodemailer'
 import _ from 'lodash'
+import nodemailer from 'nodemailer'
 import { EmailRequest } from '../../types/emailRequest'
 
-export async function POST(req: Request){
-  const { senderName, senderEmail, message } = await req.json() as EmailRequest
-
-  const from = process.env.EMAIL_SENDER
-  const to = process.env.EMAIL_RECEIVER
-  const subject = `Portfolio: Message from ${senderName}`
-  const html = `
-      <span>${_.capitalize(senderName)} (<strong>${senderEmail}</strong>) visualized your repository and has a message to you:</span>
-
-      <p><strong>${senderName}</strong>: ${message}</p>
-  `
+export async function POST(req: Request) {
+  const { senderName, senderEmail, message } =
+    (await req.json()) as EmailRequest
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: from,
-      pass: process.env.EMAIL_SENDER_PASSWORD,
-    },
+      user: process.env.APP_EMAIL,
+      pass: process.env.APP_EMAIL_PASSWORD
+    }
   })
 
-  await transporter.sendMail({
-    from,
-    to,
-    subject,
-    html
-  })
+  try {
+    await transporter.sendMail({
+      from: process.env.APP_EMAIL,
+      to: process.env.EMAIL_RECEIVER,
+      subject: `Portfolio: Message from ${senderName}`,
+      html: `
+        <span>${_.capitalize(
+          senderName
+        )} (<strong>${senderEmail}</strong>) visualized your repository and has a message to you:</span>
 
-  return new Response(JSON.stringify({message:'Email sent successfully!'}) )
+        <p><strong>${senderName}</strong>: ${message}</p>
+      `
+    })
+  } catch (error) {
+    return new Response(JSON.stringify({ error: 'Could not sent email' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    })
+  }
+
+  return new Response(
+    JSON.stringify({
+      message: "Email sent successfully! I'll answer you as soon as possible"
+    }),
+    {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' }
+    }
+  )
 }
+

@@ -2,11 +2,8 @@
 
 import PageContent from '../components/PageContent'
 import SkillsContainer from '../components/SkillsContainer'
-import { Skill } from '../types/skill'
 
-const backendSkills: Skill[] = require('./backendSkills.json')
-const frontendSkills: Skill[] = require('./frontendSkills.json')
-const databaseSkills: Skill[] = require('./databaseSkills.json')
+import { backendSkills, databaseSkills, frontendSkills } from '../utils/skills'
 
 const About = () => {
   return (

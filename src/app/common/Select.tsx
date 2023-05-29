@@ -1,8 +1,9 @@
-import Select, { Props as SelectProps, StylesConfig } from 'react-select'
+import SelectComponent, {
+  Props as SelectProps,
+  StylesConfig
+} from 'react-select'
 
-interface IComboboxProps extends SelectProps {}
-
-const Combobox = (props: IComboboxProps) => {
+const Select = (props: SelectProps) => {
   const customStyles: StylesConfig = {
     control: (provided, state) => ({
       ...provided,
@@ -31,8 +32,8 @@ const Combobox = (props: IComboboxProps) => {
     })
   }
 
-  return <Select {...props} styles={customStyles} />
+  return <SelectComponent {...props} styles={customStyles} />
 }
 
-export default Combobox
+export default Select
 

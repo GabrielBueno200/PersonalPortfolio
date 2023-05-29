@@ -1,6 +1,6 @@
 'use client'
 
-import Combobox from '@/app/common/components/Combobox'
+import Select from '@/app/common/Select'
 import _ from 'lodash'
 import { useState } from 'react'
 import RepositoryCard from '../RepositoryCard'
@@ -42,11 +42,9 @@ const FilteredRepositoriesCards = ({
 
   return (
     <>
-      <Combobox
+      <Select
         value={{
-          label: !!activeLanguage
-            ? activeLanguage
-            : 'Select a repository language...'
+          label: !!activeLanguage ? activeLanguage : 'Select a language...'
         }}
         onChange={({ label: language }: any) =>
           handleSetActiveLanguage(language)

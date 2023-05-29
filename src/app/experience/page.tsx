@@ -5,8 +5,7 @@ import PageContent from '../components/PageContent'
 
 import ExperienceCard from '../components/ExperienceCard'
 
-import { educationalExperiences } from '../utils/educationExperiences'
-import { professionalExperiences } from '../utils/professionalExperiences'
+import { educationalExperiences, professionalExperiences } from '../utils/experiences'
 
 type ExperienceOptions = 'Professional' | 'Educational'
 
