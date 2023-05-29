@@ -14,7 +14,7 @@ const Contact = () => (
         </span>
 
         <div className="mt-20 space-y-4">
-          <span className="linkedin text-2xl flex gap-2 items-center">
+          <span className="linkedin text-2xl hover:text-3xl transition-all flex gap-2 items-center">
             <FaLinkedin color="#0A66C2" size={50} />
             <a
               href="https://www.linkedin.com/in/gabriel-vr-bueno/"
@@ -25,7 +25,7 @@ const Contact = () => (
             </a>
           </span>
 
-          <span className="github text-2xl flex gap-2 items-center">
+          <span className="github text-2xl hover:text-3xl transition-all flex gap-2 items-center">
             <FaGithub color="#FFF" size={50} />
             <a
               href="https://github.com/GabrielBueno200"
