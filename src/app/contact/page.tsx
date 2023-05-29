@@ -6,7 +6,7 @@ import PageContent from '../components/PageContent'
 
 const Contact = () => (
   <PageContent title="Contact">
-    <div className="flex">
+    <div className="flex gap-4">
       <div className="platforms-container w-1/2 h-full">
         <span className="text-white text-xl">
           If you want to know more about me or my projects you can find me on
