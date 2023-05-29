@@ -6,5 +6,6 @@ type Repository = {
   url: string,
   readmeMarkdown: string,
   defaultBranch: string,
-  language: string
+  language: string,
+  createdAt: Date
 }

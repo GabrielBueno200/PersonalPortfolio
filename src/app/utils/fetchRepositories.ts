@@ -15,9 +15,12 @@ const repositoriesToFilter = [
   "Arduino-Snake-Game",
   "MovieTheater-with-8051"
 ]
+
+// 86400
+
 const getRepositoriesAsync = async () => {
   const revalidate: RequestInit = {
-    next: { revalidate: 86400 }
+    next: { revalidate: 5 }
   }
 
   const response = await fetch(
@@ -41,6 +44,7 @@ const getRepositoriesAsync = async () => {
         defaultBranch: repository['default_branch'],
         fullName: repository['full_name'],
         url: repository['html_url'],
+        createdAt: repository['created_at'],
         readmeMarkdown: await readmeData.text()
       }
     })

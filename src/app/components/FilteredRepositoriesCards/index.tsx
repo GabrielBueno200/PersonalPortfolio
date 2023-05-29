@@ -34,6 +34,12 @@ const FilteredRepositoriesCards = ({
       ? repositories
       : repositories.filter(repo => repo.language === activeLanguage)
 
+  const filteredAndOrderedRepositories = _.orderBy(
+    filteredRepositories,
+    'createdAt',
+    'desc'
+  )
+
   return (
     <>
       <Combobox
@@ -50,7 +56,7 @@ const FilteredRepositoriesCards = ({
       />
 
       <div className="grid grid-cols-4 gap-5 overflow-auto max-h-[65%] mt-6 pr-2 scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
-        {filteredRepositories.map(repo => (
+        {filteredAndOrderedRepositories.map(repo => (
           <RepositoryCard key={repo.id} repository={repo} />
         ))}
       </div>
