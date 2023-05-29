@@ -16,11 +16,9 @@ const repositoriesToFilter = [
   "MovieTheater-with-8051"
 ]
 
-// 86400
-
 const getRepositoriesAsync = async () => {
   const revalidate: RequestInit = {
-    next: { revalidate: 5 }
+    next: { revalidate: 86400 }
   }
 
   const response = await fetch(
