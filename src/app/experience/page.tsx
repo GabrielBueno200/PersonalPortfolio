@@ -29,17 +29,17 @@ const Experience = () => {
 
   return (
     <PageContent title="Experience">
-      <div className="lg:flex h-full">
-        <ul className="list-none text-primary-green w-full text-2xl space-y-4 mt-6 lg:text-3xl lg:space-y-6 lg:w-5/12 lg:mt-12 lg:block">
+      <div className="h-full lg:flex">
+        <ul className="mt-6 w-full list-none space-y-4 text-2xl text-primary-green lg:mt-12 lg:block lg:w-5/12 lg:space-y-6 lg:text-3xl">
           {['Professional', 'Educational'].map(experienceOption => {
             const isActiveOption = activeExperienceOption === experienceOption
 
             return (
               <li
                 key={experienceOption}
-                className={`before:content-['>'] before:mr-2 cursor-pointer ${
+                className={`cursor-pointer before:mr-2 before:content-['>'] ${
                   isActiveOption ? 'text-white-green' : ''
-                } lg:hover:text-5xl transition-all w-fit`}
+                } w-fit transition-all lg:hover:text-5xl`}
                 onClick={() =>
                   handleSetActiveExperienceOption(
                     experienceOption as ExperienceOptions
@@ -51,14 +51,14 @@ const Experience = () => {
             )
           })}
         </ul>
-        <div className="space-y-4 w-full mt-6 lg:-mt-4 pb-10 lg:pb-0">
+        <div className="mt-6 w-full space-y-4 pb-10 lg:-mt-4 lg:pb-0">
           <button
             onClick={downloadCvPdfFile}
-            className="w-fit bg-primary-green disabled:opacity-25 text-white hover:opacity-75 font-bold uppercase text-sm px-6 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150 flex gap-2 items-center"
+            className="flex w-fit items-center gap-2 rounded bg-primary-green px-6 py-1 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none disabled:opacity-25"
           >
             <BsFileTextFill /> My CV
           </button>
-          <div className="experiences-container border-primary-green/20 p-3 lg:p-10 border-2 rounded-md flex-1 pr-3 -mt-3 overflow-auto h-[75%] space-y-8 scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+          <div className="experiences-container -mt-3 h-[75%] flex-1 space-y-8 overflow-auto rounded-md border-2 border-primary-green/20 p-3 pr-3 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:p-10">
             {experiences.map(experience => (
               <ExperienceCard
                 key={experience.institution}

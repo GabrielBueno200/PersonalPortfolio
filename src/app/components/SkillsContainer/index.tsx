@@ -11,10 +11,10 @@ interface ISkillsContainerProps {
 
 const SkillsContainer = ({ category, skills }: ISkillsContainerProps) => (
   <div className="container">
-    <h2 className="text-primary-green text-xl">{_.capitalize(category)}</h2>
-    <div className="flex gap-4 mt-2 flex-wrap">
+    <h2 className="text-xl text-primary-green">{_.capitalize(category)}</h2>
+    <div className="mt-2 flex flex-wrap gap-4">
       {skills.map(skill => (
-        <div className="flex flex-col gap-2 text-white items-center text-sm">
+        <div className="flex flex-col items-center gap-2 text-sm text-white">
           <Image
             key={skill.name}
             src={skill.imagePath}

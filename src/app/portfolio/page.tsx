@@ -7,7 +7,7 @@ const Portfolio = async () => {
 
   return (
     <PageContent title="Portfolio">
-      <span className="text-white font-bold block text-lg lg:text-xl mb-6 lg:mb-0">
+      <span className="mb-6 block text-lg font-bold text-white lg:mb-0 lg:text-xl">
         You can check my projects through my github repositories. Check them
         below.
       </span>

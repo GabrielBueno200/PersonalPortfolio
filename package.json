@@ -27,7 +27,6 @@
     "next": "13.4.4",
     "nodemailer": "^6.9.2",
     "postcss": "8.4.23",
-    "prettier": "^2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.44.2",
@@ -47,6 +46,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.195"
+    "@types/lodash": "^4.14.195",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0"
   }
 }

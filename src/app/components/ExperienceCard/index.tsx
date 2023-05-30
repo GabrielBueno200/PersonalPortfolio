@@ -8,28 +8,28 @@ interface IExperienceCardProps {
 const ExperienceCard = ({ experience }: IExperienceCardProps) => {
   return (
     <div className="experience-card space-y-4">
-      <div className="flex flex-col items-center md:flex-row md:items-start gap-4 max-h-full">
+      <div className="flex max-h-full flex-col items-center gap-4 md:flex-row md:items-start">
         <Image
           src={experience.institutionImagePath}
           alt={experience.institution}
           width={80}
           height={80}
-          className="rounded-full border-gray-900 border-2"
+          className="rounded-full border-2 border-gray-900"
         />
         <div className="general-info flex flex-col">
-          <span className="text-primary-green font-bold">
+          <span className="font-bold text-primary-green">
             {experience.position}
           </span>
-          <span className="text-white-green font-bold">
+          <span className="font-bold text-white-green">
             {experience.institution}
           </span>
-          <span className="text-zinc-500 font-bold">{experience.period}</span>
+          <span className="font-bold text-zinc-500">{experience.period}</span>
         </div>
       </div>
 
-      <ul className="text-white p-4 md:p-0">
+      <ul className="p-4 text-white md:p-0">
         {experience.descriptionTopics.map((topic, idx) => (
-          <li key={idx} className="before:content-['>'] before:mr-2">
+          <li key={idx} className="before:mr-2 before:content-['>']">
             {topic}
           </li>
         ))}

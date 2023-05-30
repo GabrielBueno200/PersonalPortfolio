@@ -37,10 +37,10 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 w-full mt-2">
+      <form onSubmit={handleSubmit(onSubmit)} className="mt-2 w-full space-y-3">
         <div>
           <input
-            className="w-full bg-zinc-900 p-2 text-white rounded-lg"
+            className="w-full rounded-lg bg-zinc-900 p-2 text-white"
             placeholder="Your name"
             {...register('name')}
           />
@@ -51,7 +51,7 @@ const ContactForm = () => {
 
         <div>
           <input
-            className="w-full bg-zinc-900 p-2 text-white rounded-lg"
+            className="w-full rounded-lg bg-zinc-900 p-2 text-white"
             placeholder="Your email"
             {...register('email')}
           />
@@ -62,7 +62,7 @@ const ContactForm = () => {
 
         <div>
           <textarea
-            className="h-[13em] w-full bg-zinc-900 p-2 rounded-lg text-white"
+            className="h-[13em] w-full rounded-lg bg-zinc-900 p-2 text-white"
             placeholder="Your message to me..."
             style={{ resize: 'none' }}
             {...register('message')}
@@ -74,7 +74,7 @@ const ContactForm = () => {
 
         <button
           disabled={isSubmitting}
-          className="w-fit bg-primary-green disabled:opacity-25 text-white hover:opacity-75 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
+          className="w-fit rounded bg-primary-green px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none disabled:opacity-25"
         >
           {!isSubmitting ? 'SEND IT' : 'SENDING...'}
         </button>

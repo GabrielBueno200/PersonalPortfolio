@@ -16,8 +16,8 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
 
   return (
     <>
-      <div className="text-white bg-zinc-900 rounded-sm h-72 p-4 flex flex-col gap-2 space-y-4">
-        <div className=" text-white flex justify-between text-xl">
+      <div className="flex h-72 flex-col gap-2 space-y-4 rounded-sm bg-zinc-900 p-4 text-white">
+        <div className=" flex justify-between text-xl text-white">
           <div>
             <h1 className="truncate text-sm font-bold">{repository.name}</h1>
             <small className="text-xs text-white-green">
@@ -25,17 +25,17 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
             </small>
           </div>
           <IoMdOpen
-            className="cursor-pointer hover:fill-zinc-500 transition-all mt-1.5 invisible md:visible"
+            className="invisible mt-1.5 cursor-pointer transition-all hover:fill-zinc-500 md:visible"
             onClick={() => handleSetShowRepositoryModal(true)}
           />
         </div>
 
-        <span className="flex-1 overflow-auto pr-2 scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+        <span className="flex-1 overflow-auto pr-2 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full">
           {repository.description}
         </span>
 
         <button
-          className="bg-primary-green text-white hover:opacity-75 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 flex items-center gap-2 justify-center"
+          className="mb-1 mr-1 flex items-center justify-center gap-2 rounded bg-primary-green px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none"
           type="button"
           onClick={() => open(repository.url)}
         >

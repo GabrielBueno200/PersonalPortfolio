@@ -30,8 +30,8 @@ const NavBar = () => {
           className={`
             ${!isMenuOpen ? 'text-white-green' : 'text-secondary-green'}
             cursor-pointer
-            transition-all
-            bg-zinc-950 p-1 rounded-sm`}
+            rounded-sm
+            bg-zinc-950 p-1 transition-all`}
         />
       </div>
 
@@ -39,9 +39,9 @@ const NavBar = () => {
         className={`
           ${
             !isMenuOpen ? 'hidden' : 'flex'
-          } flex-col flex-wrap gap-4 md:flex-row md:flex-nowrap md:gap-6 bg-black uppercase text-white
-            p-4 md:items-center md:justify-end text-md md:text-xl
-            md:flex md:h-16
+          } text-md flex-col flex-wrap gap-4 bg-black p-4 uppercase text-white md:flex
+            md:h-16 md:flex-row md:flex-nowrap md:items-center md:justify-end
+            md:gap-6 md:text-xl
         `}
       >
         <Link className={`${isActive('/')} transition-all`} href="/">
