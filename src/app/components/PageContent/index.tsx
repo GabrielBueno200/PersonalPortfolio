@@ -11,7 +11,7 @@ interface IPageContentProps {
 
 const PageContent = ({ title, children }: IPageContentProps) => (
   <main className="bg-secondary-green flex items-center justify-center">
-    <div className="bg-black w-11/12 h-[85vh] p-8 overflow-hidden">
+    <div className="bg-black w-11/12 h-[85vh] p-8 overflow-y-scroll lg:overflow-hidden scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <span className="w-fit inline-block mb-2">
         <h1 className="text-primary-green text-5xl font-extrabold mb-3 w-fit inline-block typewriter">
           {title}
