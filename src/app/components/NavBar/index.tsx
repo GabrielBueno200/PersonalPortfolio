@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <nav>
       <div
-        className="navbar-toggler bg-black p-2 md:hidden border-b-gray-600"
+        className="navbar-toggler bg-black p-2 md:hidden border-b-gray-600 cursor-pointer"
         onClick={handleToggleMenuOpen}
       >
         <GiHamburgerMenu color="#C1F2B6" size={30} />
