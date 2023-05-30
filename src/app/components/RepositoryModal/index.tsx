@@ -51,8 +51,8 @@ export const RepositoryModal = ({
             </div>
 
             {/*body*/}
-            <div className="relative px-6 flex-auto h-3/5 overflow-hidden max-w-[90vw]">
-              <p className="my-4 text-white text-lg leading-relaxed max-h-[50vh] pr-3 overflow-auto scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+            <div className="relative px-6 flex-auto h-3/5 overflow-hidden">
+              <p className="my-4 text-white text-lg leading-relaxed max-w-[100vw] max-h-[50vh] pr-3 overflow-auto scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                 <div
                   className="prose prose-stone text-white"
                   dangerouslySetInnerHTML={{ __html: processedMarkdownContent }}
