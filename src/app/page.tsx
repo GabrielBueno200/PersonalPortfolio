@@ -1,6 +1,6 @@
 const Home = () => (
   <main
-    className="bg-secondary-green bg-bottom md:bg-right-bottom bg-no-repeat bg-65% md:bg-50% flex items-center justify-center md:justify-normal"
+    className="bg-secondary-green bg-bottom md:bg-right-bottom bg-no-repeat bg-75% md:bg-50% flex items-center justify-center md:justify-normal"
     style={{ backgroundImage: "url('assets/me.png')" }}
   >
     <div className="text-primary-green bg-black w-fit px-10 pb-10 pt-12 -mt-24 md:mt-0 md:pt-24 md:ml-20 flex flex-col">
