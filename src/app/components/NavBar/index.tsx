@@ -32,9 +32,9 @@ const NavBar = () => {
         className={`
           ${
             !isMenuOpen ? 'hidden' : 'flex'
-          } h-16 flex-col flex-wrap gap-4 md:flex-row md:flex-nowrap md:gap-6 bg-black uppercase text-white
+          } flex-col flex-wrap gap-4 md:flex-row md:flex-nowrap md:gap-6 bg-black uppercase text-white
             p-4 md:items-center md:justify-end text-md md:text-xl
-            md:flex
+            md:flex md:h-16
         `}
       >
         <Link className={`${isActive('/')} transition-all`} href="/">
