@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundSize: {
         '50%': '50%',
+        '65%': '65%',
       },
     },
   },
