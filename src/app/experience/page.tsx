@@ -30,7 +30,7 @@ const Experience = () => {
   return (
     <PageContent title="Experience">
       <div className="lg:flex h-full">
-        <ul className="list-none flex justify-between text-primary-green w-full text-2xl mt-6 gap lg:text-3xl lg:space-y-6 lg:w-5/12 lg:mt-12 lg:block">
+        <ul className="list-none text-primary-green w-full text-2xl space-y-4 mt-6 lg:text-3xl lg:space-y-6 lg:w-5/12 lg:mt-12 lg:block">
           {['Professional', 'Educational'].map(experienceOption => {
             const isActiveOption = activeExperienceOption === experienceOption
 

@@ -8,7 +8,7 @@ interface IExperienceCardProps {
 const ExperienceCard = ({ experience }: IExperienceCardProps) => {
   return (
     <div className="experience-card space-y-4">
-      <div className="flex gap-4 max-h-full">
+      <div className="flex flex-col items-center md:flex-row md:items-start gap-4 max-h-full">
         <Image
           src={experience.institutionImagePath}
           alt={experience.institution}
@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }: IExperienceCardProps) => {
         </div>
       </div>
 
-      <ul className="text-white">
+      <ul className="text-white p-4 md:p-0">
         {experience.descriptionTopics.map((topic, idx) => (
           <li key={idx} className="before:content-['>'] before:mr-2">
             {topic}
