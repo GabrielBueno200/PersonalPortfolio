@@ -19,7 +19,7 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
       <div className="text-white bg-zinc-900 rounded-sm h-72 p-4 flex flex-col gap-2 space-y-4">
         <div className=" text-white flex justify-between text-xl">
           <div>
-            <h1>{repository.name}</h1>
+            <h1 className="truncate text-sm font-bold">{repository.name}</h1>
             <small className="text-xs text-white-green">
               {repository.language}
             </small>

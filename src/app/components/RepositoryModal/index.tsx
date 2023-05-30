@@ -28,7 +28,7 @@ export const RepositoryModal = ({
 
   return (
     <>
-      <div className="justify-center items-center w-max flex overflow-x-hidden overflow-y-auto fixed z-50 outline-none focus:outline-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="w-[90vw] justify-center items-center lg:w-max flex overflow-x-hidden overflow-y-auto fixed z-50 outline-none focus:outline-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
           {/*content*/}
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col  outline-none focus:outline-none bg-zinc-800">
@@ -51,7 +51,7 @@ export const RepositoryModal = ({
             </div>
 
             {/*body*/}
-            <div className="relative px-6 flex-auto h-3/5 overflow-hidden">
+            <div className="relative px-6 flex-auto h-3/5 overflow-hidden max-w-[90vw]">
               <p className="my-4 text-white text-lg leading-relaxed max-h-[50vh] pr-3 overflow-auto scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                 <div
                   className="prose prose-stone text-white"

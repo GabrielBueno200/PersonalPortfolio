@@ -50,10 +50,10 @@ const FilteredRepositoriesCards = ({
           handleSetActiveLanguage(language)
         }
         options={languagesOptions}
-        className="w-72 ml-auto my-2"
+        className="lg:w-72 ml-auto my-2"
       />
 
-      <div className="grid grid-cols-4 gap-5 overflow-auto max-h-[65%] mt-6 pr-2 scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-4 lg:gap-5 overflow-auto lg:max-h-[65%] mt-6 lg:pr-2 scrollbar-thin scrollbar-thumb-primary-green scrollbar-track-white-green scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
         {filteredAndOrderedRepositories.map(repo => (
           <RepositoryCard key={repo.id} repository={repo} />
         ))}
