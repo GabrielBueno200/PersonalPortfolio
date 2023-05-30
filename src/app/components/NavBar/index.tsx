@@ -22,10 +22,17 @@ const NavBar = () => {
   return (
     <nav>
       <div
-        className="navbar-toggler bg-black p-2 md:hidden border-b-gray-600 cursor-pointer"
+        className="navbar-toggler bg-black p-2 md:hidden"
         onClick={handleToggleMenuOpen}
       >
-        <GiHamburgerMenu color="#C1F2B6" size={30} />
+        <GiHamburgerMenu
+          size={30}
+          className={`
+            ${!isMenuOpen ? 'text-white-green' : 'text-secondary-green'}
+            cursor-pointer
+            transition-all
+            bg-zinc-950 p-1 rounded-sm`}
+        />
       </div>
 
       <div
