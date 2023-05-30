@@ -22,7 +22,7 @@ export async function POST(req: Request) {
       html: `
         <span>${_.capitalize(
           senderName
-        )} (<strong>${senderEmail}</strong>) visualized your repository and has a message to you:</span>
+        )} (<strong>${senderEmail}</strong>) visualized your portfolio and has a message to you:</span>
 
         <p><strong>${senderName}</strong>: ${message}</p>
       `
