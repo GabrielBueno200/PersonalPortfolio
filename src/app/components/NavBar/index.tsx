@@ -32,8 +32,8 @@ const NavBar = () => {
         className={`
           ${
             !isMenuOpen ? 'hidden' : 'flex'
-          } flex-col flex-wrap gap-4 md:flex-row md:flex-nowrap md:gap-6 bg-black uppercase text-white
-            lg:h-16 p-4 lg:items-center md:justify-end text-md md:text-xl
+          } h-16 flex-col flex-wrap gap-4 md:flex-row md:flex-nowrap md:gap-6 bg-black uppercase text-white
+            p-4 md:items-center md:justify-end text-md md:text-xl
             md:flex
         `}
       >
