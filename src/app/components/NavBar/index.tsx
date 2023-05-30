@@ -37,11 +37,14 @@ const NavBar = () => {
 
       <div
         className={`
-          ${
-            !isMenuOpen ? 'hidden' : 'flex'
-          } text-md flex-col flex-wrap gap-4 bg-black p-4 uppercase text-white md:flex
-            md:h-16 md:flex-row md:flex-nowrap md:items-center md:justify-end
-            md:gap-6 md:text-xl
+          ${!isMenuOpen ? 'hidden' : 'flex'}
+          text-md
+          flex-col flex-wrap gap-4
+          bg-black p-4 uppercase
+          text-white md:flex
+          md:h-16 md:flex-row
+          md:flex-nowrap md:items-center
+          md:justify-end md:gap-6 md:text-xl
         `}
       >
         <Link className={`${isActive('/')} transition-all`} href="/">

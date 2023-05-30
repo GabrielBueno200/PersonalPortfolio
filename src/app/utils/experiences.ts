@@ -13,7 +13,7 @@ export const educationalExperiences: Experience[] = [
   },
   {
     institution: 'ETEC - Technical School of São Paulo',
-    institutionImagePath: '/assets/institutions/etec.jpg',
+    institutionImagePath: '/assets/institutions/ETEC.jpg',
     position: 'Web Development Technician',
     period: 'Feb 2016 - Dec 2018',
     descriptionTopics: [
