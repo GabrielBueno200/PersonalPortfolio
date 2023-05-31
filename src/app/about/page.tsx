@@ -21,7 +21,7 @@ const About = () => {
             preferred stack involves working with C#/.Net Core on the server
             side and React/Typescript on the client side. With approximately
             three years of professional experience as a developer, I'm currently
-            employed as a Mid Software Engineer at FIAP. I am constantly
+            employed as a Mid Level Software Engineer at FIAP. I am constantly
             striving to enhance my programming skills and improve my knowledge
             in this field. I prioritize seeking experiences that contribute to
             both my personal and professional growth
