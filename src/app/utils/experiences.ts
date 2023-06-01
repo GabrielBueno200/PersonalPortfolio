@@ -28,7 +28,7 @@ export const professionalExperiences: Experience[] = [
     institution: 'FIAP',
     institutionImagePath: '/assets/institutions/FIAP.jpg',
     position: 'Backend Software Engineer Pl',
-    period: 'May 2023 - Present',
+    period: 'June 2023 - Present',
     descriptionTopics: [
       'Development of web applications like WebApis and microservices using .NET Core, .NET Framework and ASP .NET MVC'
     ]
@@ -44,7 +44,7 @@ export const professionalExperiences: Experience[] = [
     ]
   },
   {
-    institution: 'Invent Smart Intralogistcs Solutions',
+    institution: 'Invent Smart Intralogistics Solutions',
     institutionImagePath: '/assets/institutions/invent.jpg',
     position: 'Information Technology Intern',
     period: 'Oct 2020 - Jun 2021',
