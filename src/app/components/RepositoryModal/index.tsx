@@ -5,7 +5,7 @@ interface IRepositoryModalProps {
   repository: Repository
 }
 
-import { IoLogoGithub } from 'react-icons/io'
+import { IoLogoGithub, IoMdEye } from 'react-icons/io'
 import rehypeRaw from 'rehype-raw'
 import rehypeStringify from 'rehype-stringify'
 import remarkGfm from 'remark-gfm'
@@ -25,6 +25,8 @@ export const RepositoryModal = ({
     .use(rehypeStringify)
     .processSync(repository.readmeMarkdown)
     .toString()
+
+  const isDeployed = !!repository.deployedUrl
 
   return (
     <>
@@ -70,6 +72,16 @@ export const RepositoryModal = ({
                 <IoLogoGithub className="text-2xl" />
                 Check on Github
               </button>
+              {isDeployed && (
+                <button
+                  className="mb-1 mr-1 flex items-center justify-center gap-2 rounded bg-blue-700 px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none"
+                  type="button"
+                  onClick={() => open(repository.deployedUrl)}
+                >
+                  <IoMdEye className="text-2xl" />
+                  Visualize
+                </button>
+              )}
             </div>
           </div>
         </div>

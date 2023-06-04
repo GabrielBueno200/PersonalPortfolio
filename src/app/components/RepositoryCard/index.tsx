@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { IoLogoGithub, IoMdOpen } from 'react-icons/io'
+import { IoLogoGithub, IoMdEye, IoMdOpen } from 'react-icons/io'
 import { RepositoryModal } from '../RepositoryModal'
 
 interface IRepositoryCardProps {
@@ -14,6 +14,8 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
   const handleSetShowRepositoryModal = (show: boolean) =>
     setShowRepositoryModal(show)
 
+  const isDeployed = !!repository.deployedUrl
+
   return (
     <>
       <div className="flex h-72 flex-col gap-2 space-y-4 rounded-sm bg-zinc-900 p-4 text-white">
@@ -24,10 +26,18 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
               {repository.language}
             </small>
           </div>
-          <IoMdOpen
-            className="invisible mt-1.5 cursor-pointer transition-all hover:fill-zinc-500 md:visible"
-            onClick={() => handleSetShowRepositoryModal(true)}
-          />
+          <span className="flex gap-2">
+            {isDeployed && (
+              <IoMdEye
+                className="mt-1.5 cursor-pointer transition-all hover:fill-zinc-500"
+                onClick={() => open(repository.deployedUrl)}
+              />
+            )}
+            <IoMdOpen
+              className="invisible mt-1.5 cursor-pointer transition-all hover:fill-zinc-500 md:visible"
+              onClick={() => handleSetShowRepositoryModal(true)}
+            />
+          </span>
         </div>
 
         <span className="flex-1 overflow-auto pr-2 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full">

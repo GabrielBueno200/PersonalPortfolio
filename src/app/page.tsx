@@ -1,21 +1,40 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 const Home = () => (
   <main
-    className="bg-secondary-green bg-bottom md:bg-right-bottom bg-no-repeat bg-75% md:bg-50% flex items-center justify-center md:justify-normal"
+    className="flex items-center justify-center bg-secondary-green bg-75% bg-bottom bg-no-repeat md:justify-normal md:bg-50% md:bg-right-bottom"
     style={{ backgroundImage: "url('assets/me.png')" }}
   >
-    <div className="text-primary-green bg-black w-fit px-10 pb-10 pt-12 -mt-24 md:mt-0 md:pt-24 md:ml-20 flex flex-col">
-      <span className="w-fit inline-block">
+    <div className="-mt-24 flex w-fit flex-col bg-black px-10 pb-10 pt-12 text-primary-green md:ml-20 md:mt-0 md:pt-24">
+      <span className="inline-block w-fit">
         <h2 className="text-md typewriter">Hi, my name is</h2>
       </span>
-      <span className="w-fit inline-block">
-        <h1 className="text-4xl lg:text-7xl mt-6 mb-3 typewriter">
+      <span className="inline-block w-fit">
+        <h1 className="typewriter mb-3 mt-6 text-4xl lg:text-7xl">
           Gabriel Bueno
         </h1>
       </span>
-      <span className="w-fit inline-block">
+      <span className="inline-block w-fit">
         <h2 className="text-md typewriter">
           {"<>I'm a Fullstack Software Engineer</>"}
         </h2>
+        <span className="mt-4 flex gap-2">
+          <a
+            href="https://www.linkedin.com/in/gabriel-vr-bueno/"
+            target="_blank"
+          >
+            <FaLinkedin
+              size={24}
+              className="cursor-pointer fill-slate-600 transition-colors hover:fill-[#0A66C2]"
+            />
+          </a>
+          <a href="https://github.com/GabrielBueno200" target="_blank">
+            <FaGithub
+              size={24}
+              className="cursor-pointer fill-slate-600 transition-colors hover:fill-white"
+            />
+          </a>
+        </span>
       </span>
     </div>
   </main>

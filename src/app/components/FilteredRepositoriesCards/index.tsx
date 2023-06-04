@@ -36,8 +36,8 @@ const FilteredRepositoriesCards = ({
 
   const filteredAndOrderedRepositories = _.orderBy(
     filteredRepositories,
-    'createdAt',
-    'desc'
+    ['createdAt', 'deployedUrl'],
+    ['desc', 'desc']
   )
 
   return (

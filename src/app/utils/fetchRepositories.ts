@@ -1,20 +1,20 @@
 const repositoriesToFilter = [
-  "StudentClassManager",
-  "Spotify-Tailwind-Clone",
-  "ToDoTaskApp",
-  "cython-compiler",
-  "GeekShopping-Microservices",
-  "monty-hall-problem",
-  "ReactDataStructures",
-  "COVID-19-simulation",
-  "MultiThreadedPrimesSolver",
-  "SoftwareTestingProject",
-  "Wallet-Controller",
-  "round-robin-simulator",
-  "ChatProtocol",
-  "Arduino-Snake-Game",
-  "MovieTheater-with-8051",
-  "PersonalPortfolio"
+  'StudentClassManager',
+  'Spotify-Tailwind-Clone',
+  'ToDoTaskApp',
+  'cython-compiler',
+  'GeekShopping-Microservices',
+  'monty-hall-problem',
+  'ReactDataStructures',
+  'COVID-19-simulation',
+  'MultiThreadedPrimesSolver',
+  'SoftwareTestingProject',
+  'Wallet-Controller',
+  'round-robin-simulator',
+  'ChatProtocol',
+  'Arduino-Snake-Game',
+  'MovieTheater-with-8051',
+  'PersonalPortfolio'
 ]
 
 const getRepositoriesAsync = async () => {
@@ -44,6 +44,7 @@ const getRepositoriesAsync = async () => {
         fullName: repository['full_name'],
         url: repository['html_url'],
         createdAt: repository['created_at'],
+        deployedUrl: repository['homepage'],
         readmeMarkdown: await readmeData.text()
       }
     })
