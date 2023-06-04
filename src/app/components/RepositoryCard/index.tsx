@@ -34,7 +34,7 @@ const RepositoryCard = ({ repository }: IRepositoryCardProps) => {
               />
             )}
             <IoMdOpen
-              className="invisible mt-1.5 cursor-pointer transition-all hover:fill-zinc-500 md:visible"
+              className="mt-1.5 hidden cursor-pointer transition-all hover:fill-zinc-500 md:block"
               onClick={() => handleSetShowRepositoryModal(true)}
             />
           </span>
