@@ -13,7 +13,8 @@ const repositoriesToFilter = [
   "round-robin-simulator",
   "ChatProtocol",
   "Arduino-Snake-Game",
-  "MovieTheater-with-8051"
+  "MovieTheater-with-8051",
+  "PersonalPortfolio"
 ]
 
 const getRepositoriesAsync = async () => {
