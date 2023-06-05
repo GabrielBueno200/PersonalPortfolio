@@ -6,6 +6,7 @@ import PageContent from '../components/PageContent'
 
 import ExperienceCard from '../components/ExperienceCard'
 
+import VerticalStepBar from '../common/VerticalStepBar'
 import { downloadCvPdfFile } from '../utils/downloadCv'
 import {
   educationalExperiences,
@@ -58,13 +59,15 @@ const Experience = () => {
           >
             <BsFileTextFill /> My CV
           </button>
-          <div className="experiences-container -mt-3 h-[75%] flex-1 space-y-8 overflow-auto rounded-md border-2 border-primary-green/20 p-3 pr-3 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:p-10">
-            {experiences.map(experience => (
-              <ExperienceCard
-                key={experience.institution}
-                experience={experience}
-              />
-            ))}
+          <div className="experiences-container -mt-3 h-[75%] overflow-auto rounded-md border-2 border-primary-green/20 p-3 pr-3 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full md:p-8">
+            <VerticalStepBar
+              steps={experiences.map(experience => (
+                <ExperienceCard
+                  key={experience.institution}
+                  experience={experience}
+                />
+              ))}
+            />
           </div>
         </div>
       </div>
