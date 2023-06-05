@@ -18,8 +18,11 @@ const VerticalStepBar = ({ steps }: IVerticalStepBarProps) => {
               after:h-5 after:w-5
               after:translate-x-[60%]
               after:transform after:rounded-full
-              after:border-2 after:bg-white
-              ${(idx === 0 ? 'after:border-secondary-green after:bg-primary-green' : 'after:border-white')}
+              after:border-2
+              ${(idx === 0 
+                ? 'after:border-secondary-green after:bg-primary-green' 
+                : 'after:bg-white after:border-white'
+              )}
             `}
           />
           <span
