@@ -1,7 +1,5 @@
-import React from 'react';
-
 interface IVerticalStepBarProps {
-  steps: any[];
+  steps: any[]
 }
 
 const VerticalStepBar = ({ steps }: IVerticalStepBarProps) => {
@@ -19,24 +17,25 @@ const VerticalStepBar = ({ steps }: IVerticalStepBarProps) => {
               after:translate-x-[60%]
               after:transform after:rounded-full
               after:border-2
-              ${(idx === 0 
-                ? 'after:border-secondary-green after:bg-primary-green' 
-                : 'after:bg-white after:border-white'
-              )}
+              ${
+                idx === 0
+                  ? 'after:border-secondary-green after:bg-primary-green'
+                  : 'after:border-white after:bg-white'
+              }
             `}
           />
           <span
             className={`
               before:z-1
-            relative
-              pl-6
+              relative
               py-3
-              before:opacity-20
+              pl-6
               before:absolute
               before:left-0
               before:h-full
               before:border-l-4
               before:border-gray-300
+              before:opacity-20
             `}
           >
             {step}
@@ -44,7 +43,8 @@ const VerticalStepBar = ({ steps }: IVerticalStepBarProps) => {
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}
 
-export default VerticalStepBar;
+export default VerticalStepBar
+
