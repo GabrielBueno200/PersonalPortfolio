@@ -21,7 +21,6 @@ const SkillsContainer = ({ category, skills }: ISkillsContainerProps) => (
             width={60}
             height={60}
             alt={skill.name}
-            className="hover:rotate-360 transition-transform duration-700 ease-in-out"
           />
           {_.upperCase(skill.name)}
         </div>
