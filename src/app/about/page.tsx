@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <PageContent title="About">
-      <div className="max-h-full lg:flex lg:gap-36">
+      <div className="max-h-full lg:flex lg:gap-28">
         <div className="who-container w-full lg:w-5/12 lg:self-center">
           <h1 className="mb-6 text-2xl font-semibold text-primary-green lg:text-3xl">
             Who's this guy?

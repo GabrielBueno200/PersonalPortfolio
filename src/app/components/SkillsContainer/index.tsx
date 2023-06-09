@@ -12,15 +12,16 @@ interface ISkillsContainerProps {
 const SkillsContainer = ({ category, skills }: ISkillsContainerProps) => (
   <div className="container">
     <h2 className="text-xl text-primary-green">{_.capitalize(category)}</h2>
-    <div className="mt-2 flex flex-wrap gap-4">
+    <div className="mt-2 flex flex-wrap gap-5">
       {skills.map(skill => (
-        <div className="flex flex-col items-center gap-2 text-sm text-white">
+        <div className="flex max-w-[50px] flex-col items-center gap-2 text-center text-xs text-white">
           <Image
             key={skill.name}
             src={skill.imagePath}
             width={60}
             height={60}
             alt={skill.name}
+            className="hover:rotate-360 transition-transform duration-700 ease-in-out"
           />
           {_.upperCase(skill.name)}
         </div>
