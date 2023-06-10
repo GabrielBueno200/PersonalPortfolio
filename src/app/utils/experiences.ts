@@ -27,7 +27,7 @@ export const professionalExperiences: Experience[] = [
   {
     institution: 'FIAP',
     institutionImagePath: '/assets/institutions/FIAP.jpg',
-    position: 'Backend Software Engineer Pl',
+    position: 'Mid-Level Backend Software Engineer',
     period: 'Jun 2023 - Present',
     descriptionTopics: [
       'Development of web applications like WebApis and microservices using .NET Core, .NET Framework and ASP .NET MVC'
@@ -36,7 +36,7 @@ export const professionalExperiences: Experience[] = [
   {
     institution: 'Partner Group',
     institutionImagePath: '/assets/institutions/PG.jpg',
-    position: 'Fullstack Software Engineer Jr',
+    position: 'Junior Fullstack Software Engineer',
     period: 'Jun 2021 - May 2023',
     descriptionTopics: [
       'Development and maintenance of systems aimed at digital formalization and document fraud prevention.',
