@@ -32,6 +32,10 @@ export const frontendSkills: Skill[] = [
   {
     name: 'styled-components',
     imagePath: '/assets/technologies/styledcomponents.svg'
+  },
+  {
+    name: 'nextjs',
+    imagePath: '/assets/technologies/nextjs.svg'
   }
 ]
 
