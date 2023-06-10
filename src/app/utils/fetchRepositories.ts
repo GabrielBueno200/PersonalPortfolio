@@ -1,4 +1,5 @@
 const repositoriesToFilter = [
+  'AutomaticSkullLandmarksDetection',
   'StudentClassManager',
   'Spotify-Tailwind-Clone',
   'ToDoTaskApp',
