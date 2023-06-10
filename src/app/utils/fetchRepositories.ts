@@ -22,7 +22,7 @@ const repositoriesToFilter = [
 
 const getRepositoriesAsync = async () => {
   const revalidate: RequestInit = {
-    next: { revalidate: 1800 }
+    next: { revalidate: 86400 }
   }
 
   const response = await fetch(
