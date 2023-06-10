@@ -12,8 +12,8 @@ interface IPageContentProps {
 
 const PageContent = ({ title, children }: IPageContentProps) => (
   <>
-    <main className="flex items-center justify-center bg-secondary-green">
-      <div className="relative z-10 h-[85vh] w-11/12 overflow-y-scroll bg-black p-8 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:overflow-hidden">
+    <main className="relative z-10 flex items-center justify-center bg-secondary-green/80">
+      <div className="h-[85vh] w-11/12 overflow-y-scroll bg-black p-8 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:overflow-hidden">
         <span className="mb-2 inline-block w-fit">
           <h1 className="typewriter mb-3 inline-block w-fit text-5xl font-extrabold text-primary-green">
             {title}
@@ -23,7 +23,7 @@ const PageContent = ({ title, children }: IPageContentProps) => (
       </div>
       <ToastContainer />
     </main>
-    <MatrixRain opacity={40} />
+    <MatrixRain opacity={70} />
   </>
 )
 
