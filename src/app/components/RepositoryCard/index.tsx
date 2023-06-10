@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { IoLogoGithub, IoMdEye, IoMdOpen } from 'react-icons/io'
 import { RepositoryModal } from '../RepositoryModal'
+import { Repository } from '@/app/types/repository'
 
 interface IRepositoryCardProps {
   repository: Repository
