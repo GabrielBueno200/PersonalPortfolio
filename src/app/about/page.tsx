@@ -28,7 +28,7 @@ const About = () => {
           </span>
         </div>
 
-        <div className="skills-container mt-6 max-h-full flex-1 pb-10 lg:-mt-12 lg:pb-0">
+        <div className="skills-container mt-6 max-h-full flex-1 pb-10 md:-mt-6 md:pb-0">
           <h1 className="mb-6 text-2xl font-semibold text-primary-green lg:text-3xl">
             Skills
           </h1>

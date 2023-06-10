@@ -62,7 +62,7 @@ const ContactForm = () => {
 
         <div>
           <textarea
-            className="h-[13em] w-full rounded-lg bg-zinc-900 p-2 text-white"
+            className="h-[16em] w-full rounded-lg bg-zinc-900 p-2 text-white"
             placeholder="Your message to me..."
             style={{ resize: 'none' }}
             {...register('message')}
