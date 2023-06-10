@@ -1,7 +1,7 @@
 import { Repository } from "../types/repository"
 
 const repositoriesToFilter = [
-  'AutomaticSkullLandmarksDetection',
+  'SkullLandmarksDetection',
   'StudentClassManager',
   'Spotify-Tailwind-Clone',
   'ToDoTaskApp',
