@@ -40,7 +40,7 @@ const Experience = () => {
                 key={experienceOption}
                 className={`cursor-pointer before:mr-2 before:content-['>'] ${
                   isActiveOption ? 'text-white-green' : ''
-                } w-fit transition-all lg:hover:text-5xl`}
+                } w-fit select-none transition-all lg:hover:text-5xl`}
                 onClick={() =>
                   handleSetActiveExperienceOption(
                     experienceOption as ExperienceOptions
