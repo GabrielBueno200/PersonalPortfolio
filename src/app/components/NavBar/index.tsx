@@ -20,7 +20,7 @@ const NavBar = () => {
   const handleToggleMenuOpen = () => setIsMenuOpen(!isMenuOpen)
 
   return (
-    <nav>
+    <nav className="relative z-10">
       <div
         className="navbar-toggler bg-black p-2 md:hidden"
         onClick={handleToggleMenuOpen}
