@@ -4,6 +4,7 @@ import Select from '@/app/common/Select'
 import _ from 'lodash'
 import { useState } from 'react'
 import RepositoryCard from '../RepositoryCard'
+import { Repository } from '@/app/types/repository'
 
 interface IFilteredRepositoriesCardsProps {
   repositories: Repository[]

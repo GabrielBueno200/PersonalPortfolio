@@ -66,6 +66,7 @@ const RandomizedStringRain = ({ containerHeight }: IRandomizedStringRainProps) =
     <>
       {randomString.map((char, index) => (
         <a
+          key={index}
           className="-mt-[12px]"
           style={{
             opacity: index < 6 ? 0.1 + index * 0.15 : 1,

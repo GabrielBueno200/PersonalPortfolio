@@ -36,8 +36,9 @@ const MatrixRain = ({ opacity }: IMatrixRainProps) => {
       `}
       ref={containerRef}
     >
-      {_.times(randomStringCount, () => (
+      {_.times(randomStringCount, index => (
         <div
+          key={index}
           className="
             select-none
             whitespace-nowrap
