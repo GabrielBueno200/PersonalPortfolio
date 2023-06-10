@@ -1,10 +1,6 @@
 'use client'
 
-interface IRepositoryModalProps {
-  onClose(): void
-  repository: Repository
-}
-
+import { Repository } from '@/app/types/repository'
 import { IoLogoGithub, IoMdEye } from 'react-icons/io'
 import rehypeRaw from 'rehype-raw'
 import rehypeStringify from 'rehype-stringify'
@@ -12,6 +8,11 @@ import remarkGfm from 'remark-gfm'
 import remarkParse from 'remark-parse'
 import remark2rehype from 'remark-rehype'
 import { unified } from 'unified'
+
+interface IRepositoryModalProps {
+  onClose(): void
+  repository: Repository
+}
 
 export const RepositoryModal = ({
   repository,
@@ -21,7 +22,7 @@ export const RepositoryModal = ({
     .use(remarkParse)
     .use(remarkGfm)
     .use(remark2rehype)
-    .use(rehypeRaw) // Add rehypeRaw processor
+    .use(rehypeRaw)
     .use(rehypeStringify)
     .processSync(repository.readmeMarkdown)
     .toString()
