@@ -46,7 +46,7 @@
 ## 💻 About The Project - Personal Portfolio
 This project serves as a showcase for my professional and academic journey, highlighting my accomplishments and my projects. Its purpose is to provide a comprehensive overview of who I am and what I have achieved thus far.
 
-![image](https://github.com/GabrielBueno200/PersonalPortfolio/assets/56837996/3b44babc-0912-4ea1-b702-b778f64b9c30)
+![image](https://github.com/GabrielBueno200/PersonalPortfolio/assets/56837996/e646dae4-5b04-47c9-ac14-b28f8aa4c06b)
 
 
 
