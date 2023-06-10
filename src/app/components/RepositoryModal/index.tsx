@@ -44,7 +44,7 @@ export const RepositoryModal = ({
                 </small>
               </h3>
               <button
-                className="text-3xl font-semibold leading-none self-start"
+                className="self-start text-3xl font-semibold leading-none"
                 onClick={onClose}
               >
                 <span className="block w-6 outline-none focus:outline-none">
@@ -64,9 +64,9 @@ export const RepositoryModal = ({
             </div>
 
             {/*footer*/}
-            <div className="flex items-center justify-end rounded-b p-3">
+            <div className="flex flex-col items-center justify-end rounded-b p-3 md:flex-row">
               <button
-                className="mb-1 mr-1 flex items-center justify-center gap-2 rounded bg-primary-green px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none"
+                className="mb-1 mr-1 flex min-w-full items-center justify-center gap-2 rounded bg-primary-green px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none md:min-w-max"
                 type="button"
                 onClick={() => open(repository.url)}
               >
@@ -75,7 +75,7 @@ export const RepositoryModal = ({
               </button>
               {isDeployed && (
                 <button
-                  className="mb-1 mr-1 flex items-center justify-center gap-2 rounded bg-blue-700 px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none"
+                  className="mb-1 mr-1 flex min-w-full items-center justify-center gap-2 rounded bg-blue-700 px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:opacity-75 hover:shadow-lg focus:outline-none md:min-w-max"
                   type="button"
                   onClick={() => open(repository.deployedUrl)}
                 >
