@@ -25,15 +25,11 @@ const RandomizedStringRain = ({ containerHeight }: IRandomizedStringRainProps) =
 
   const getMutatedString = (string: string[]) => {
     const newString: string[] = []
-    for (let i = 1; i < string.length; i++) {
-      if (Math.random() < 0.02) {
-        newString.push(getRandomChar())
-      } else {
-        newString.push(string[i])
-      }
-    }
-    newString.push(getRandomChar())
-    return newString
+
+    for (let i = 1; i < string.length; i++)
+      newString.push(Math.random() < 0.02 ? getRandomChar() : getRandomChar())
+
+    return [...newString, getRandomChar()]
   }
 
   const [randomString, setRandomString] = useState(getRandomStringFromChars())
@@ -55,13 +51,13 @@ const RandomizedStringRain = ({ containerHeight }: IRandomizedStringRainProps) =
       setRandomString([])
       const newRandomString = getRandomStringFromChars()
       setRandomString(newRandomString)
-      setTopPadding(newRandomString.length * -44)
+      setTopPadding(newRandomString.length * -54)
       setIntervalDelay(null)
       setTimeout(() => {
         setIntervalDelay(_.random(minIntervalDelay, maxIntervalDelay))
       }, _.random(minDelayBetweenStrings, maxDelayBetweenStrings))
     } else {
-      setTopPadding(topPadding + 44)
+      setTopPadding(topPadding + 54)
     }
     setRandomString(getMutatedString)
   }, intervalDelay)

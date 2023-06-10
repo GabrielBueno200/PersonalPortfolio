@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import RandomizedStringRain from './RandomizedStringRain';
+import RandomizedStringRain from './RandomizedStringRain'
+import _ from 'lodash'
 
 interface IMatrixRainProps {
   opacity: number
@@ -18,7 +19,9 @@ const MatrixRain = ({ opacity }: IMatrixRainProps) => {
     })
   }, [])
 
-  const randomStringCount = containerSize ? Math.floor(containerSize.width / 22) : 0
+  const randomStringCount = containerSize
+    ? Math.floor(containerSize.width / 22)
+    : 0
 
   return (
     <div
@@ -33,14 +36,15 @@ const MatrixRain = ({ opacity }: IMatrixRainProps) => {
       `}
       ref={containerRef}
     >
-      {new Array(randomStringCount).fill(undefined).map(_ => (
+      {_.times(randomStringCount, () => (
         <div
           className="
-          select-none
-          whitespace-nowrap
-          bg-black
-          text-[30px]
-          text-primary-green"
+            select-none
+            whitespace-nowrap
+            bg-black
+            text-[30px]
+            text-primary-green
+          "
           style={{
             textOrientation: 'upright',
             writingMode: 'vertical-rl',

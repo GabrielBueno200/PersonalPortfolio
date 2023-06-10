@@ -22,23 +22,6 @@ const Home = () => (
           <h2 className="text-md typewriter">
             {"<>I'm a Fullstack Software Engineer</>"}
           </h2>
-          <span className="mt-4 flex gap-2">
-            <a
-              href="https://www.linkedin.com/in/gabriel-vr-bueno/"
-              target="_blank"
-            >
-              <FaLinkedin
-                size={24}
-                className="cursor-pointer fill-slate-600 transition-colors hover:fill-[#0A66C2]"
-              />
-            </a>
-            <a href="https://github.com/GabrielBueno200" target="_blank">
-              <FaGithub
-                size={24}
-                className="cursor-pointer fill-slate-600 transition-colors hover:fill-white"
-              />
-            </a>
-          </span>
         </span>
       </div>
     </main>

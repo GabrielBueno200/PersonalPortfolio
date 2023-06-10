@@ -1,3 +1,5 @@
+import { Repository } from "../types/repository"
+
 const repositoriesToFilter = [
   'AutomaticSkullLandmarksDetection',
   'StudentClassManager',
