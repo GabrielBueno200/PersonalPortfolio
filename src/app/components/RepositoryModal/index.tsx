@@ -31,20 +31,20 @@ export const RepositoryModal = ({
 
   return (
     <>
-      <div className="fixed left-1/2 top-1/2 z-50 flex w-[90vw] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none lg:w-max">
+      <div className="fixed left-1/2 top-1/2 z-50 flex w-[90vw] max-w-[95vw] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none lg:w-max">
         <div className="relative mx-auto my-6 w-auto max-w-3xl">
           {/*content*/}
           <div className="relative flex flex-col rounded-lg border-0 bg-zinc-800  shadow-lg outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-center justify-between rounded-t border-b border-solid border-primary-green p-5 text-primary-green">
-              <h3 className="text-3xl font-semibold">
+              <h3 className="text-xl font-bold md:text-3xl">
                 {repository.name}
                 <small className="block text-xs text-white-green">
                   {repository.description}
                 </small>
               </h3>
               <button
-                className=" text-3xl font-semibold leading-none "
+                className="text-3xl font-semibold leading-none self-start"
                 onClick={onClose}
               >
                 <span className="block w-6 outline-none focus:outline-none">
@@ -54,10 +54,10 @@ export const RepositoryModal = ({
             </div>
 
             {/*body*/}
-            <div className="relative h-3/5 flex-auto overflow-hidden px-6">
-              <p className="my-4 max-h-[50vh] max-w-[100vw] overflow-auto pr-3 text-lg leading-relaxed text-white scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full">
+            <div className="relative h-3/5 max-w-full flex-auto overflow-hidden px-4 md:px-6">
+              <p className="my-4 max-h-[50vh] overflow-auto pr-3 text-lg leading-relaxed text-white scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full">
                 <div
-                  className="prose prose-stone text-white"
+                  className="prose prose-stone max-w-[80vw] text-sm text-white"
                   dangerouslySetInnerHTML={{ __html: processedMarkdownContent }}
                 />
               </p>
