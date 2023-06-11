@@ -45,7 +45,7 @@ const ContactForm = () => {
             {...register('name')}
           />
           {errors.name && (
-            <small className="text-red-400">{errors.name.message}</small>
+            <small className="text-red-400 text-xs py-0">{errors.name.message}</small>
           )}
         </div>
 
@@ -56,19 +56,19 @@ const ContactForm = () => {
             {...register('email')}
           />
           {errors.email && (
-            <small className="text-red-400">{errors.email.message}</small>
+            <small className="text-red-400 text-xs py-0">{errors.email.message}</small>
           )}
         </div>
 
         <div>
           <textarea
-            className="h-[16em] w-full rounded-lg bg-zinc-900 p-2 text-white"
+            className="h-[14.5em] w-full rounded-lg bg-zinc-900 p-2 text-white"
             placeholder="Your message to me..."
             style={{ resize: 'none' }}
             {...register('message')}
           />
           {errors.message && (
-            <small className="text-red-400">{errors.message.message}</small>
+            <small className="text-red-400 text-xs py-0">{errors.message.message}</small>
           )}
         </div>
 
