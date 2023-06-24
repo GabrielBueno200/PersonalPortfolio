@@ -59,7 +59,7 @@ const Experience = () => {
           >
             <BsFileTextFill /> My CV
           </button>
-          <div className="experiences-container -mt-3 h-[75%] overflow-auto rounded-md border-2 border-primary-green/20 p-3 pr-3 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full md:p-8">
+          <div className="experiences-container -mt-3 h-[85%] overflow-auto rounded-md border-2 border-primary-green/20 p-3 pr-3 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full md:p-8">
             <VerticalStepBar
               steps={experiences.map(experience => (
                 <ExperienceCard

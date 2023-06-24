@@ -19,7 +19,7 @@ const PageContent = ({ title, children }: IPageContentProps) => (
             {title}
           </h1>
         </span>
-        {children}
+        <div className="h-[90%] py-3">{children}</div>
       </div>
       <ToastContainer />
     </main>

@@ -9,12 +9,12 @@ const About = () => {
 
   return (
     <PageContent title="About">
-      <div className="max-h-full lg:flex lg:gap-28">
+      <div className="max-h-full md:flex md:gap-24">
         <div className="who-container w-full lg:w-5/12 lg:self-center">
           <h1 className="mb-6 text-2xl font-semibold text-primary-green lg:text-3xl">
             Who's this guy?
           </h1>
-          <span className="text-white sm:text-sm lg:text-xl">
+          <span className="md:text-md text-white sm:text-sm">
             Hi, I'm Gabriel, a {myAge}-year-old software developer. I have a
             degree in Computer Science and I am also an IT technician. I possess
             skills in both backend and frontend software development. My
@@ -28,12 +28,12 @@ const About = () => {
           </span>
         </div>
 
-        <div className="skills-container mt-6 max-h-full flex-1 pb-10 md:-mt-6 md:pb-0">
+        <div className="skills-container mt-6 max-h-full flex-1 pb-10 md:-mt-6 md:pb-0 overflow-y-auto scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full sm:mb-5">
           <h1 className="mb-6 text-2xl font-semibold text-primary-green lg:text-3xl">
             Skills
           </h1>
 
-          <div className="space-y-3 sm:mb-5">
+          <div className="space-y-3">
             <SkillsContainer category="backend" skills={backendSkills} />
             <SkillsContainer category="frontend" skills={frontendSkills} />
             <SkillsContainer category="database" skills={databaseSkills} />

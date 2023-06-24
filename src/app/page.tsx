@@ -1,6 +1,5 @@
 'use client'
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import MatrixRain from './components/MatrixRain'
 
 const Home = () => (
@@ -25,7 +24,7 @@ const Home = () => (
         </span>
       </div>
     </main>
-    <MatrixRain opacity={60}/>
+    <MatrixRain opacity={60} />
   </>
 )
 

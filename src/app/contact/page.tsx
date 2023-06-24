@@ -6,7 +6,7 @@ import PageContent from '../components/PageContent'
 
 const Contact = () => (
   <PageContent title="Contact">
-    <div className="lg:flex lg:gap-4">
+    <div className="lg:flex lg:gap-4 max-h-full">
       <div className="platforms-container h-full lg:w-1/2">
         <span className="text-xl text-white">
           If you want to know more about me or my projects you can find me on
@@ -38,7 +38,7 @@ const Contact = () => (
         </div>
       </div>
 
-      <div className="form-container mt-6 flex flex-col justify-center lg:mt-0 lg:w-1/2">
+      <div className="form-container max-h-[90] flex flex-col justify-center lg:w-1/2 overflow-auto scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full p-4">
         <span className="py-3 text-center text-2xl text-primary-green lg:py-0 lg:text-left lg:text-xl">
           Have a question or want to work together?
         </span>

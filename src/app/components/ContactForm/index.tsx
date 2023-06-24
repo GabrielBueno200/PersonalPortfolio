@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="mt-2 w-full space-y-3">
+      <form onSubmit={handleSubmit(onSubmit)} className="mt-2 w-full space-y-3 max-h-full">
         <div>
           <input
             className="w-full rounded-lg bg-zinc-900 p-2 text-white"
@@ -62,7 +62,7 @@ const ContactForm = () => {
 
         <div>
           <textarea
-            className="h-[14.5em] w-full rounded-lg bg-zinc-900 p-2 text-white"
+            className="h-[11em] w-full rounded-lg bg-zinc-900 p-2 text-white"
             placeholder="Your message to me..."
             style={{ resize: 'none' }}
             {...register('message')}

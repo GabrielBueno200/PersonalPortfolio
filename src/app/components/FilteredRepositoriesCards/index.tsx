@@ -54,7 +54,7 @@ const FilteredRepositoriesCards = ({
         className="my-2 ml-auto lg:w-72"
       />
 
-      <div className="mt-6 flex flex-col gap-4 overflow-auto scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:grid lg:max-h-[65%] lg:grid-cols-4 lg:gap-5 lg:pr-2">
+      <div className="mt-6 flex flex-col gap-4 overflow-auto scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:grid lg:max-h-72 lg:grid-cols-4 lg:gap-5 lg:pr-2 pb-6">
         {filteredAndOrderedRepositories.map(repo => (
           <RepositoryCard key={repo.id} repository={repo} />
         ))}
