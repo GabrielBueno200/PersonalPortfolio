@@ -1,10 +1,10 @@
 'use client'
 
 import Select from '@/app/common/Select'
+import { Repository } from '@/app/types/repository'
 import _ from 'lodash'
 import { useState } from 'react'
 import RepositoryCard from '../RepositoryCard'
-import { Repository } from '@/app/types/repository'
 
 interface IFilteredRepositoriesCardsProps {
   repositories: Repository[]
@@ -54,7 +54,7 @@ const FilteredRepositoriesCards = ({
         className="my-2 ml-auto lg:w-72"
       />
 
-      <div className="mt-6 flex flex-col gap-4 overflow-auto scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:grid lg:max-h-72 lg:grid-cols-4 lg:gap-5 lg:pr-2 pb-6">
+      <div className="mt-6 flex flex-col gap-4 overflow-auto pb-6 scrollbar-thin scrollbar-track-white-green scrollbar-thumb-primary-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full lg:grid lg:max-h-[75%] lg:grid-cols-4 lg:gap-5 lg:pr-2">
         {filteredAndOrderedRepositories.map(repo => (
           <RepositoryCard key={repo.id} repository={repo} />
         ))}
@@ -64,4 +64,3 @@ const FilteredRepositoriesCards = ({
 }
 
 export default FilteredRepositoriesCards
-
