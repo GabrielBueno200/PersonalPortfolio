@@ -23,11 +23,11 @@ const RandomizedStringRain = ({ containerHeight }: IRandomizedStringRainProps) =
   const getRandomStringFromChars = () =>
     _.sampleSize(validChars, _.random(minRandomStringSize, maxRandomStringSize))
 
-  const getMutatedString = (str: string[]) => {
+  const getMutatedString = (randomString: string[]) => {
     const newString: string[] = []
 
     for (let i = 1; i < string.length; i++)
-      newString.push(Math.random() < 0.02 ? getRandomChar() : str[i])
+      newString.push(Math.random() < 0.02 ? getRandomChar() : randomString[i])
 
     return [...newString, getRandomChar()]
   }
