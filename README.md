@@ -57,11 +57,13 @@ You can see the project in the following link: https://gabrielbueno-portfolio.ve
 
 ### If you prefer to run in your machine: 
 
-First, run the development server:
+First, install the necessary dependecies, then run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
 ```
 
