@@ -27,7 +27,7 @@ export const professionalExperiences: Experience[] = [
   {
     institution: 'FIAP',
     institutionImagePath: '/assets/institutions/FIAP.jpg',
-    position: 'Mid-Level Backend Software Engineer',
+    position: 'Mid Level Backend Software Engineer',
     period: 'Jun 2023 - Present',
     descriptionTopics: [
       'Development of web applications like WebApis and microservices using .NET Core, .NET Framework and ASP .NET MVC'
