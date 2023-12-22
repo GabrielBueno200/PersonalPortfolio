@@ -17,7 +17,8 @@ const repositoriesToFilter = [
   'ChatProtocol',
   'Arduino-Snake-Game',
   'MovieTheater-with-8051',
-  'PersonalPortfolio'
+  'PersonalPortfolio',
+  'DemoCDCWithRabbitMQAndNetCore'
 ]
 
 const getRepositoriesAsync = async () => {
