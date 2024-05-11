@@ -2,6 +2,13 @@ import { Experience } from '../types/experience'
 
 export const educationalExperiences: Experience[] = [
   {
+    institution: 'FIAP',
+    institutionImagePath: '/assets/institutions/FIAP.jpg',
+    position: 'Software Engineering Master of Business Administration (MBA)',
+    period: 'May 2024 - May 2025',
+    descriptionTopics: []
+  },
+  {
     institution: 'University Center of FEI',
     institutionImagePath: '/assets/institutions/FEI.jpg',
     position: 'Computer Science Bachelor’s Degree',
