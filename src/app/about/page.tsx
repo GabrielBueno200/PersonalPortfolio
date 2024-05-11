@@ -19,8 +19,7 @@ const About = () => {
             degree in Computer Science and I am also an IT technician. I possess
             skills in both backend and frontend software development. My
             preferred stack involves working with C#/.Net Core on the server
-            side and React/Typescript on the client side. With approximately
-            three years of professional experience as a developer, I'm currently
+            side and React/Typescript on the client side. With four years of professional experience as a developer, I'm currently
             employed as a Mid Level Software Engineer at FIAP. I am constantly
             striving to enhance my programming skills and improve my knowledge
             in this field. I prioritize seeking experiences that contribute to
