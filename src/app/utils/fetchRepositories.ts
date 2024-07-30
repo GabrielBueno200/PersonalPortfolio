@@ -1,6 +1,7 @@
 import { Repository } from "../types/repository"
 
 const repositoriesToFilter = [
+  'InvestmentManager',
   'SkullLandmarksDetection',
   'StudentClassManager',
   'Spotify-Tailwind-Clone',
